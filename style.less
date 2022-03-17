@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  padding: 1em 2em;
+  span {
+    font-size: 2em;
+  }
+  a {
+    font-size: 1em;
+  }
+}
+
+.container {
+  display: flex;
+  padding: 1em;
+  height: calc(100% - 10em);
+  .left {
+    width: 50%;
+    margin: 1em;
+  }
+  .right {
+    width: 50%;
+    margin: 1em;
+  }
+  textarea {
+    width: 100%;
+    resize: none;
+    font-size: 12px;
+  }
+  #jsonContent {
+    height: 100%;
+  }
+  #cfgLoader {
+    height: calc(100% - 10em);
+  }
+}

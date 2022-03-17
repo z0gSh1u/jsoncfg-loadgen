@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsoncfg-loadgen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <span>jsoncfg-loadgen</span>
+      &nbsp;
+      <a href="https://github.com/z0gSh1u/jsoncfg-loadgen" target="_blank"
+        >github.com/z0gSh1u/jsoncfg-loadgen</a
+      >
+    </div>
+    <div class="container">
+      <div class="left">
+        <span>Input JSON</span>
+        <div id="jsonContent"></div>
+      </div>
+      <div class="right">
+        <span>Output loading code</span>
+        <div id="cfgLoader"></div>
+        <br />
+        <button id="cpprapidjsonstylebtn">C++ RapidJSON Style</button>
+        <button id="pythonstylebtn">Python Style</button>
+        <br /><br />
+        <span>Error Report:</span>
+        <p id="error"></p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.min.js"
+    integrity="sha512-hDyKEpCc9jPn3u2VffFjScCtNqZI+BAbThAhhDYqqqZbxMqmTSNIgdU0OU9BRD/8wFxHIWLAo561hh9fW7j6sA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/mode-json.min.js"
+    integrity="sha512-tw7dwP1FWNLISF1EQN2Qa0xhLU1Uyf0+F9A/kIBNtP7oCVBAj7tEJhcOh8yVUAbbVYYsi6Bd9BjYCCy8AxVc8A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/mode-c_cpp.min.js"
+    integrity="sha512-dxOWVFGgO0QZsn3ZyE3DSMDO53d4dpI3dashemV1+SSdejPhTsC1PShhHjsAwOi1oyk9ErBx6efuOpOOJtbIFg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/mode-python.min.js"
+    integrity="sha512-5quc8iiv3k68XXN7adEav7dyI4bnTDz7WSa99HZmgJk8gZlabsTQibJso2fAZpSO598IZIasgfu/StF9oX+kqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="jsoncfg-loadgen.js"></script>
+</html>
